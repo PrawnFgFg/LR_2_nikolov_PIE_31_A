@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/styleFor1.css">
+    <link rel="stylesheet" href="assets/style/styleFor2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all_nums">
+    <div class="num_1">
+        <h1>Задание 1</h1>
+        <h1>Даны три точки A, B и C на числовой оси. Точка С расположена между точками A и B. 
+            Найти произведение длин отрезков AC и BC.</h1>
+        <div class="form_group">
+
+        <label for="inp_1" class="lb">Введите точку A:</label>
+        <input type="text" class="form_control" id="inp_1">
+        <label for="inp_2" class="lb">Введите точку B:</label>
+        <input type="text" class="form_control" id="inp_2">
+        <label for="inp_3" class="lb">Введите точку C:</label>
+        <input type="text" class="form_control" id="inp_3">
+
+        <button onclick="multi()" class="btn btn-primary" >Получить произведение 
+            отрезков AC и BC</button>
+        </div>
+    
+    </div>
+
+    <!-- Задание 2 -->
+
+    </div>
+
+        <div class="number2">
+            <div class="fortext2">
+                <h1>Задание 2</h1>
+                <h1>Дано целое число, большее 999. Используя одну операцию 
+                    деления нацело и одну операцию взятия остатка от деления, 
+                    найти цифру, соответствующую 
+                    разряду тысяч в записи этого числа</h1>
+            </div>
+
+            <div class="formsG"> 
+                <label for="n1" class="lbb">Введите число более 999:</label>
+                <input type="text" class="formC" id="n1">
+
+                <button onclick="division()" class="btn btn-primary" >Получить цифру, 
+                    соответствующую 
+                    разряду тысяч в записи этого числа 
+                    </button>
+                </div>
+            </div>
+    </div>
+    
+
+    <script>
+
+        function multi(){
+
+            let A = document.getElementById("inp_1").value
+            let B = document.getElementById("inp_2").value
+            let C = document.getElementById("inp_3").value
+
+            let AC = Math.abs(A - C)
+            let BC = Math.abs(C - B)
+            
+            let product = AC * BC
+
+            alert("Произведение отрезков AC и BC = " + product)
+            return product
+        }
+
+        function division() {
+            
+            let A = document.getElementById("n1").value
+            if (A <= 999) {
+                alert("Укажите число больше 999")
+            }
+            else {
+                let totalDiv = Math.floor(A / 1000)
+                let needNum = totalDiv % 10
+                alert("Цифра в 1000-ом разряде: " + String(needNum))
+            }
+        }
+
+    </script>
+
+</body>
+</html>

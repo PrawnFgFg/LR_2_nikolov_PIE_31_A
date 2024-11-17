@@ -1,0 +1,30 @@
+.all_nums {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+    padding-right: 100px;
+}
+
+label {
+    margin: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 300px;
+    
+}
+
+.form_group {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+}
+
+.form_control {
+    max-width: 200px;
+}
+

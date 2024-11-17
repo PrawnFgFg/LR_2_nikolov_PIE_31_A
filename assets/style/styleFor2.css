@@ -1,0 +1,20 @@
+.fortext2 {
+    margin: 100px;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.formsG {
+    margin-left: 80px;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    margin-bottom: 500px;
+}
+
+
+
+.formC {
+    max-width: 200px;
+}
